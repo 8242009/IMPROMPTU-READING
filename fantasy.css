@@ -1,0 +1,135 @@
+
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+html,body{
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+}
+
+nav.navbar{
+    display: flex;
+    background: white;
+    padding: 10px 2em;
+}
+
+
+nav.navbar a img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+nav.navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+nav.navbar ul li {
+    margin-right: 2em;
+}
+
+nav.navbar ul li a{
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    padding: 10px 0;
+}
+
+nav.navbar ul li a.fan::after{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: gray;
+}
+
+nav.navbar ul li a.his::after{
+    position: absolute;
+    content: '';
+    display: block;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2em 0;
+}
+
+article .left-side{
+    width: 100%;
+    min-height: 500px;
+    padding-top:3em;
+}
+
+article .left-side p.article-numero{
+    color: black;
+    font-style: italic;
+}
+
+article .left-side h2{
+
+font-size: 2em;
+letter-spacing: 5px;
+text-transform: uppercase;
+}
+
+article .left-side.author{
+    display: flex;
+    align-items: center;
+    font-size: .95em;
+    }
+
+article .left-side .author img{
+    height: 30px;
+    object-fit: cover;
+    width: 30px;
+    background-color: lightgray;
+    border-radius: 100%;
+    margin-right: 1em;
+}
+
+article .left-side .author .author-name, article .left-side .author .category{
+    font-weight: bold;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0 5pxS;
+}
+
+article .left-side .content-preview{
+    font-size: 1.1em;
+    color: black;
+    margin-top: 4em;
+    line-height: 1.5em;
+}
+
+article .left-side .read-more{
+    text-decoration: underline;
+    color: black;
+}
+
+/** right side */
+
+article .right-side img{
+    width: 100%;
+    object-fit: cover;
+}
+    
